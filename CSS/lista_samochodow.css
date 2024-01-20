@@ -1,0 +1,141 @@
+/* style.css */
+
+/* Styl dla całej strony */
+body {
+    font-family: Arial;
+    background-color: rgb(7, 7, 7);
+    color: rgb(0, 0, 0);
+    
+    margin: 0px;
+    padding: 30px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(141, 0, 12);
+    padding: 0px;
+    margin:  0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Dodaj wyrównanie do środka */   
+}
+.navbar a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color:hsl(0, 0, 10%);
+}
+.navbar li{
+    float: left;
+}
+.logo {
+    max-width: 200px; /* Dostosuj szerokość logo */
+    height: auto;
+    margin-right: 20px; /
+}
+/* Styl dla linków do stron */
+a {
+    color: #ff000d;
+    text-decoration: underline;
+}
+img {
+    width: 300px; /* Ustaw szerokość */
+    height: 100px; /* Ustaw wysokość */
+    object-fit: cover; /* Zapewnij, aby obrazki nie były rozciągane, zachowaj proporcje */
+}
+.car {
+    position: relative; /* Pozycja dla opisu marki i modelu */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.car .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Rozciąga się na cały obrazek */
+    height: 100%; /* Rozciąga się na cały obrazek */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(71, 71, 71, 0.432);/* Kolor tła dla opisu */
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+   
+}
+
+.car:hover .overlay {
+    display: flex; /* Pokaż opis na najechaniu myszką */
+    opacity: 1;
+}
+.car img {
+    width: auto; /* Automatycznie skaluje obrazek */
+    height: auto; /* Automatyczne skalowanie wysokości */
+    max-width: 300px; /* Maksymalna szerokość obrazka */
+    max-height: 300px; /* Maksymalna wysokość obrazka */
+  
+}
+
+/* Ustawienia dla większych ekranów */
+@media screen and (min-width: 1024px) {
+    .car-container {
+        max-width: 1000px; /* Maksymalna szerokość kontenera */
+        margin: 0 auto; /* Wyśrodkowanie kontenera */
+        margin-top: 30px;
+    }
+    .car {
+        width: calc(33.33% - 10px);
+    }
+    .car img {
+        max-width: 100%; /* Nowa wartość dla obrazka */
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .car-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .car {
+        width: 100%;
+    }
+    .navbar ul {
+        
+        align-items: center; /* Wyśrodkowanie elementów */
+    }
+    .navbar li {
+        float: none; /* Resetowanie właściwości float */
+    
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .car-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .car {
+        max-width: 300px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
