@@ -7,10 +7,10 @@ Project for Programming Languages - PHP
 > - Jakub Kumer
 > - Wojciech Mułkowski
 ## Project Requirements
-includes a user system with the ability to register, log in, and log out,
-contains at least one form, whose data is validated, sanitized, processed, and saved in the database after submission,
-displays data from the database in a specified format (e.g., a list of available cars),
-includes subpages accessible publicly and those only for logged-in users (e.g., publicly displaying available cars, but requiring an account for renting).
+> - includes a user system with the ability to register, log in, and log out,
+> - contains at least one form, whose data is validated, sanitized, processed, and saved in the database after submission,
+> - displays data from the database in a specified format (e.g., a list of available cars),
+> - includes subpages accessible publicly and those only for logged-in users (e.g., publicly displaying available cars, but requiring an account for renting).
 
 ## Temat projektu **Wypożyczalnia samochodów**
 Projekt na Języki programowania - PHP
