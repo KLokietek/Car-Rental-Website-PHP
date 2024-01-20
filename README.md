@@ -1,4 +1,4 @@
-# Jp-PHP-proj
+## Temat projektu **Wypożyczalnia samochodów**
 Projekt na Języki programowania - PHP
 ## Autorzy Projektu
 > - Kacper Łokietek
@@ -16,6 +16,3 @@ Projekt na Języki programowania - PHP
 > - wysyłanie maili potwierdzających wypełninie formularza (w przypadku założenia konta/ zmiany hasła oraz wypożyczenia samochodu)
 > - konfiguracja serwera Apache
 <br><br>
-## Kto co robi
-
-## Temat projektu **Wypożyczalnia samochodów**
