@@ -1,7 +1,7 @@
 ## Project Topic Car Rental
 Project for Programming Languages - PHP
 
-##Project Authors
+## Project Authors
 > - Kacper Łokietek
 > - Jakub Mikołajczak
 > - Jakub Kumer
